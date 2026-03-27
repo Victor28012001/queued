@@ -1,16 +1,14 @@
-import { useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { useOneWallet } from '@/hooks/useOneWallet'
 
 /**
  * MOCK ONECHAIN API (replace with real OneChain SDK)
  */
-async function oneGetBalance(address: string) {
+async function oneGetBalance(_address: string) {
   // Replace with OneChain SDK call
   return 100 // fake balance
 }
 
-async function oneGetTransactions(address: string) {
+async function oneGetTransactions(_address: string) {
   // Replace with OneChain SDK call
   return [
     { hash: '0x1234abcd', amount: 10 },

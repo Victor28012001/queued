@@ -5,7 +5,7 @@ import { Settings } from 'lucide-react'
 
 export function AppHeader() {
   const [lives, setLives] = useState(3)       // example starting lives
-  const [tokens, setTokens] = useState(120)   // example starting tokens
+  const [tokens, ] = useState(120)   // example starting tokens
 
   return (
     <header className="w-full text-red-600 py-2 px-4 flex items-center justify-between">

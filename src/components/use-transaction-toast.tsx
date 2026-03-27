@@ -1,7 +1,7 @@
 import { toast } from 'sonner'
 
 export function useTransactionToast() {
-  return (signature: string) => {
+  return (_signature: string) => {
     toast('Transaction sent', {
       description: "View Transaction",
     })

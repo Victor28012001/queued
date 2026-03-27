@@ -1,6 +1,5 @@
 import { RefreshCw } from 'lucide-react'
 import { useState, useMemo } from 'react'
-import { useQueryClient } from '@tanstack/react-query'
 
 import { useOneWallet } from '@/hooks/useOneWallet'
 import { ellipsify } from '@/lib/utils'
@@ -24,7 +23,7 @@ function useGetBalance(address?: string) {
   }
 }
 
-function useGetTransactions(address?: string) {
+function useGetTransactions(_address?: string) {
   return {
     data: [],
     isLoading: false,
@@ -210,6 +209,8 @@ function ModalSend({ address }: { address: string }) {
         })
       }}
     >
+      <div className="text-sm text-gray-500">From: {ellipsify(address)}</div>
+
       <Label htmlFor="destination">Destination</Label>
       <Input
         id="destination"
