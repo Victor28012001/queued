@@ -1,10 +1,10 @@
 // components/leaderboard/LeaderboardFeature.tsx
 import { useState, useEffect, useCallback } from 'react'
-import { AppHero } from '@/components/app-hero'
-import { ellipsify } from '@/lib/utils'
-import { useOneWallet } from '@/hooks/useOneWallet'
-import { useSuiGame } from '@/hooks/useSuiGame'
-import { extractMoveObjectFields } from '@/helpers/extractEntries'
+import { AppHero } from '../../components/app-hero'
+import { ellipsify } from '../../lib/utils'
+import { useOneWallet } from '../../hooks/useOneWallet'
+import { useSuiGame } from '../../hooks/useSuiGame'
+import { extractMoveObjectFields } from '../../helpers/extractEntries'
 
 interface LeaderboardEntry {
   player: string

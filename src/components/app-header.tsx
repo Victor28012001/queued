@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { AppModal } from '@/components/app-modal'
-import { Button } from '@/components/ui/button'
+import { AppModal } from '../components/app-modal'
+import { Button } from '../components/ui/button'
 import { Settings } from 'lucide-react'
 
 export function AppHeader() {

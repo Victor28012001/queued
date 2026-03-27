@@ -1,7 +1,7 @@
 // GamePage.tsx
 import { useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router'
-import { useSuiGame } from '@/hooks/useSuiGame'
+import { useSuiGame } from '../hooks/useSuiGame'
 
 export function GamePage() {
   const { level } = useParams<{ level: string }>()

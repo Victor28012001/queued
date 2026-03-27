@@ -1,15 +1,15 @@
 import { RefreshCw } from 'lucide-react'
 import { useState, useMemo } from 'react'
 
-import { useOneWallet } from '@/hooks/useOneWallet'
-import { ellipsify } from '@/lib/utils'
+import { useOneWallet } from '../../hooks/useOneWallet'
+import { ellipsify } from '../../lib/utils'
 
-import { Button } from '@/components/ui/button'
-import { AppAlert } from '@/components/app-alert'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { AppModal } from '@/components/app-modal'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { Button } from '../../components/ui/button'
+import { AppAlert } from '../../components/app-alert'
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../../components/ui/table'
+import { AppModal } from '../../components/app-modal'
+import { Input } from '../../components/ui/input'
+import { Label } from '../../components/ui/label'
 
 /**
  * MOCK HOOKS (replace with real OneChain API later)

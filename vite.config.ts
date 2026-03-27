@@ -29,7 +29,6 @@ export default defineConfig({
   },
   publicDir: 'public',
   optimizeDeps: {
-    // Exclude Three.js from optimization
     exclude: ['three'],
   },
   build: {
@@ -37,12 +36,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
       },
-      // Don't try to bundle Three.js
       external: ['three'],
     },
-  },
-  // Configure esbuild options
-  esbuild: {
-    // No unsupported 'external' key here; externals are handled via rollupOptions and optimizeDeps
   },
 })

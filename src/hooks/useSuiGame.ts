@@ -1,6 +1,6 @@
 // hooks/useSuiGame.ts
 import { useEffect, useState } from 'react'
-import { useOneWallet } from '@/contexts/WalletContext'
+import { useOneWallet } from '../contexts/WalletContext'
 import { Transaction } from '@onelabs/sui/transactions'
 
 export function useSuiGame() {

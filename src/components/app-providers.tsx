@@ -1,4 +1,4 @@
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '../components/theme-provider'
 import { ReactQueryProvider } from './react-query-provider'
 import { WalletProvider } from '../contexts/WalletContext'
 import React from 'react'

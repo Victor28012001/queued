@@ -1,5 +1,5 @@
-import { AppHero } from '@/components/app-hero'
-import { useOneWallet } from '@/hooks/useOneWallet'
+import { AppHero } from '../../components/app-hero'
+import { useOneWallet } from '../../hooks/useOneWallet'
 import { useNavigate } from 'react-router'
 
 export default function DashboardFeature() {

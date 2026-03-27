@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router'
-import { useOneWallet } from '@/hooks/useOneWallet'
+import { useOneWallet } from '../../hooks/useOneWallet'
 
 export default function AccountIndexFeature() {
   const navigate = useNavigate()
