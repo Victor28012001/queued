@@ -1,0 +1,231 @@
+{
+    "id": "level4",
+    "name": "Floor 4 – Operation Sections",
+    "description": "Grid of operation tables with curtains at the front and left of each section.",
+    "metadata": {
+        "startRoom": [
+            -10,
+            0,
+            0
+        ],
+        "elevatorAccess": true,
+        "mapDensity": "high"
+    },
+    "rooms": [
+        {
+            "id": "operation_section",
+            "type": "operation",
+            "grid": {
+                "start": [
+                    -18,
+                    0,
+                    -18
+                ],
+                "end": [
+                    18,
+                    0,
+                    18
+                ],
+                "spacing": [
+                    8,
+                    8
+                ]
+            },
+            "model": "models/medical_exam_table.glb"
+        },
+        {
+            "id": "curtain_front",
+            "type": "curtain",
+            "grid": {
+                "start": [
+                    -18,
+                    0,
+                    -18
+                ],
+                "end": [
+                    18,
+                    0,
+                    18
+                ],
+                "spacing": [
+                    8,
+                    8
+                ]
+            },
+            "model": "models/curtain.glb"
+        },
+        {
+            "id": "curtain_left",
+            "type": "curtain",
+            "grid": {
+                "start": [
+                    -18,
+                    0,
+                    -18
+                ],
+                "end": [
+                    18,
+                    0,
+                    18
+                ],
+                "spacing": [
+                    8,
+                    8
+                ]
+            },
+            "model": "models/curtain.glb"
+        },
+        {
+            "id": "surgical",
+            "type": "surgical",
+            "grid": {
+                "start": [
+                    -18,
+                    0,
+                    -18
+                ],
+                "end": [
+                    18,
+                    0,
+                    18
+                ],
+                "spacing": [
+                    8,
+                    8
+                ]
+            },
+            "model": "models/surgical.glb"
+        },
+        {
+            "id": "elevator1",
+            "type": "elevator",
+            "position": [
+                -28.599,
+                0,
+                -28.6
+            ],
+            "size": [
+                4,
+                1,
+                2
+            ],
+            "model": "models/elevator.glb"
+        }
+    ],
+    "walls": [
+        {
+            "id": "floor4_outer_wall",
+            "type": "solid",
+            "from": [
+                -30,
+                0,
+                -30
+            ],
+            "to": [
+                30,
+                0,
+                -30
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "floor4_outer_wall",
+            "type": "solid",
+            "from": [
+                -30,
+                0,
+                30
+            ],
+            "to": [
+                30,
+                0,
+                30
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "floor4_outer_wall",
+            "type": "solid",
+            "from": [
+                -30,
+                0,
+                -30
+            ],
+            "to": [
+                -30,
+                0,
+                30
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "floor4_outer_wall",
+            "type": "solid",
+            "from": [
+                30,
+                0,
+                -30
+            ],
+            "to": [
+                30,
+                0,
+                30
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        }
+    ],
+    "pillars": [
+        {
+            "type": "pillar",
+            "grid": {
+                "start": [
+                    -18,
+                    0,
+                    -18
+                ],
+                "end": [
+                    18,
+                    0,
+                    18
+                ],
+                "spacing": [
+                    24,
+                    24
+                ]
+            },
+            "size": [
+                0.5,
+                6,
+                0.5
+            ],
+            "model": "models/pillar.glb"
+        }
+    ],
+    "floorTiles": {
+        "grid": {
+            "start": [
+                -30,
+                0,
+                -30
+            ],
+            "end": [
+                70,
+                0,
+                70
+            ],
+            "spacing": [
+                2,
+                2
+            ]
+        }
+    },
+    "target": [
+        0,
+        0,
+        0
+    ]
+}

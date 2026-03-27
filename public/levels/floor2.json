@@ -1,0 +1,911 @@
+{
+    "id": "level2",
+    "name": "Floor 2 – Hospital Wards",
+    "description": "Hospital floor with stacked wards, facing rooms, and shared walls.",
+    "metadata": {
+        "startRoom": [
+            0,
+            0,
+            -14
+        ],
+        "elevatorAccess": true
+    },
+    "rooms": [
+        {
+            "id": "wardA_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -50,
+                    0,
+                    -12
+                ],
+                "end": [
+                    -50,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardA_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -29.75,
+                    0,
+                    -12
+                ],
+                "end": [
+                    -29.75,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardB_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -20,
+                    0,
+                    -12
+                ],
+                "end": [
+                    -20,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardB_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -0.13,
+                    0,
+                    -12
+                ],
+                "end": [
+                    -0.13,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardC_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    9.74,
+                    0,
+                    -12
+                ],
+                "end": [
+                    9.74,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardC_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    29.61,
+                    0,
+                    -12
+                ],
+                "end": [
+                    29.61,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardD_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    39.34,
+                    0,
+                    -12
+                ],
+                "end": [
+                    39.34,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardD_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    59.74,
+                    0,
+                    -12
+                ],
+                "end": [
+                    59.74,
+                    0,
+                    12
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardAA_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -50,
+                    0,
+                    24
+                ],
+                "end": [
+                    -50,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardAA_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -29.75,
+                    0,
+                    24
+                ],
+                "end": [
+                    -29.75,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardBB_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -20,
+                    0,
+                    24
+                ],
+                "end": [
+                    -20,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardBB_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    -0.13,
+                    0,
+                    24
+                ],
+                "end": [
+                    -0.13,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardCC_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    9.74,
+                    0,
+                    24
+                ],
+                "end": [
+                    9.74,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardCC_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    29.61,
+                    0,
+                    24
+                ],
+                "end": [
+                    29.61,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardDD_left",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    39.34,
+                    0,
+                    24
+                ],
+                "end": [
+                    39.34,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "wardDD_right",
+            "type": "hospital_room",
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "grid": {
+                "start": [
+                    59.74,
+                    0,
+                    24
+                ],
+                "end": [
+                    59.74,
+                    0,
+                    48
+                ],
+                "spacing": [
+                    0,
+                    9.8
+                ]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "elevator1",
+            "type": "elevator",
+            "position": [
+                -70.68,
+                0,
+                -22.6
+            ],
+            "size": [
+                4,
+                1,
+                2
+            ],
+            "model": "models/elevator.glb"
+        }
+    ],
+    "walls": [
+        {
+            "id": "front_wall",
+            "type": "solid",
+            "from": [
+                -72,
+                0,
+                -24
+            ],
+            "to": [
+                72,
+                0,
+                -24
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "back_wall",
+            "type": "solid",
+            "from": [
+                -72,
+                0,
+                48.2
+            ],
+            "to": [
+                72,
+                0,
+                48.2
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "left_wall",
+            "type": "solid",
+            "from": [
+                -72,
+                0,
+                -24
+            ],
+            "to": [
+                -72,
+                0,
+                48
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "right_wall",
+            "type": "solid",
+            "from": [
+                72,
+                0,
+                -24
+            ],
+            "to": [
+                72,
+                0,
+                48
+            ],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "door_wardA_corridor",
+            "type": "door",
+            "position": [
+                -40.49,
+                1,
+                -17
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "door_wardB_corridor",
+            "type": "door",
+            "position": [
+                -10.49,
+                1,
+                -17
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "door_wardC_corridor",
+            "type": "door",
+            "position": [
+                19.51,
+                1,
+                -17
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "door_wardD_corridor",
+            "type": "door",
+            "position": [
+                49.51,
+                1,
+                -17
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "door_wardAA_corridor",
+            "type": "door",
+            "position": [
+                -40.49,
+                1,
+                19
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "door_wardBB_corridor",
+            "type": "door",
+            "position": [
+                -10.49,
+                1,
+                19
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "door_wardCC_corridor",
+            "type": "door",
+            "position": [
+                19.51,
+                1,
+                19
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "door_wardDD_corridor",
+            "type": "door",
+            "position": [
+                49.51,
+                1,
+                19
+            ],
+            "size": [
+                0.12, 0.21, 0.12
+            ],
+            "opensTo": "corridor",
+            "model": "models/white_double_door1.glb",
+            "interactive": true
+        },
+        {
+            "id": "wall_wardA_left",
+            "type": "solid",
+            "from": [
+                -45.1,
+                0,
+                -17
+            ],
+            "to": [
+                -41,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardA_right",
+            "type": "solid",
+            "from": [
+                -34.75,
+                0,
+                -17
+            ],
+            "to": [
+                -39,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardB_left",
+            "type": "solid",
+            "from": [
+                -15.05,
+                0,
+                -17
+            ],
+            "to": [
+                -11,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardB_right",
+            "type": "solid",
+            "from": [
+                -5.14,
+                0,
+                -17
+            ],
+            "to": [
+                -9,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardC_left",
+            "type": "solid",
+            "from": [
+                15.15,
+                0,
+                -17
+            ],
+            "to": [
+                19,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardC_right",
+            "type": "solid",
+            "from": [
+                24.20,
+                0,
+                -17
+            ],
+            "to": [
+                21,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardD_left",
+            "type": "solid",
+            "from": [
+                44.77,
+                0,
+                -17
+            ],
+            "to": [
+                49,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardD_right",
+            "type": "solid",
+            "from": [
+                54.29,
+                0,
+                -17
+            ],
+            "to": [
+                51,
+                0,
+                -17
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardAA_left",
+            "type": "solid",
+            "from": [
+                -45.1,
+                0,
+                19
+            ],
+            "to": [
+                -41,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardAA_right",
+            "type": "solid",
+            "from": [
+                -34.75,
+                0,
+                19
+            ],
+            "to": [
+                -39,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardBB_left",
+            "type": "solid",
+            "from": [
+                -15.05,
+                0,
+                19
+            ],
+            "to": [
+                -11,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardBB_right",
+            "type": "solid",
+            "from": [
+                -5.14,
+                0,
+                19
+            ],
+            "to": [
+                -9,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardCC_left",
+            "type": "solid",
+            "from": [
+                15.15,
+                0,
+                19
+            ],
+            "to": [
+                19,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardCC_right",
+            "type": "solid",
+            "from": [
+                24.20,
+                0,
+                19
+            ],
+            "to": [
+                21,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardDD_left",
+            "type": "solid",
+            "from": [
+                44.77,
+                0,
+                19
+            ],
+            "to": [
+                49,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        },
+        {
+            "id": "wall_wardDD_right",
+            "type": "solid",
+            "from": [
+                54.29,
+                0,
+                19
+            ],
+            "to": [
+                51,
+                0,
+                19
+            ],
+            "height": 4,
+            "thickness": 0.2
+        }
+    ],
+    "floorTiles": {
+        "grid": {
+            "start": [
+                -72,
+                0,
+                -24
+            ],
+            "end": [
+                72,
+                0,
+                48
+            ],
+            "spacing": [
+                2,
+                2
+            ]
+        }
+    },
+    "target": [
+        0,
+        0,
+        16
+    ]
+}

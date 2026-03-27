@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "MyFont";
+    src: url("./fonts/HelpMe.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .glitch {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 9999;
+    animation: shift 1s ease-in-out infinite alternate;
+  }
+  
+  .glitch:before,
+  .glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  
+  .glitch:before {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #8b00ff;
+    z-index: -1;
+  }
+  
+  .glitch:after {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #00e571;
+    z-index: -2;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+  
+    20% {
+      transform: translate(-3px, 3px);
+    }
+  
+    40% {
+      transform: translate(-3px, -3px);
+    }
+  
+    60% {
+      transform: translate(3px, 3px);
+    }
+  
+    80% {
+      transform: translate(3px, -3px);
+    }
+  
+    to {
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes shift {
+    0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+      transform: skewX(0deg);
+    }
+  
+    41% {
+      transform: skewX(10deg);
+    }
+  
+    42% {
+      transform: skewX(-10deg);
+    }
+  
+    59% {
+      transform: skewX(40deg) skewY(10deg);
+    }
+  
+    60% {
+      transform: skewX(-40deg) skewY(-10deg);
+    }
+  
+    63% {
+      transform: skewX(10deg) skewY(-5deg);
+    }
+  
+    70% {
+      transform: skewX(-50deg) skewY(-20deg);
+    }
+  
+    71% {
+      transform: skewX(10deg) skewY(-10deg);
+    }
+  }
+  
+  /* Media Queries for Mobile and Tablet Screens */
+  @media (max-width: 768px) {
+    .glitch {
+      font-size: 20px; /* Adjust loader font size */
+    }
+  
+    #loadingScreen {
+      align-items: flex-start; /* Align loadingScreen content to the top */
+      padding-top: 20%; /* Add padding to the top of the loadingScreen */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .glitch {
+      font-size: 16px; /* Adjust loadingScreen font size */
+    }
+  
+    #loadingScreen {
+      padding-top: 30%; /* Further adjust padding for smaller screens */
+    }
+  }
+
+  /* ─── HUD ─────────────────────────────────────── */
+#levelDisplay {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-family: "MyFont";
+  font-size: 14px;
+  z-index: 100;
+}
+
+#objectiveDisplay {
+  position: fixed;
+  top: 34px;
+  left: 10px;
+  color: #ffaa00;
+  font-family: "MyFont";
+  font-size: 14px;
+  z-index: 100;
+  max-width: 300px;
+}
+
+#elevatorTimer {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  font-family: "MyFont";
+  font-weight: bold;
+  color: #ff4444;
+  text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+  display: none;
+  z-index: 200;
+  pointer-events: none;
+}
+
+/* ─── PAUSE ───────────────────────────────────── */
+#pauseOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 48px;
+  font-family: "MyFont";
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 500;
+}
+
+/* ─── GAME OVER ───────────────────────────────── */
+#gameOverOverlay {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.92);
+  color: white;
+  text-align: center;
+  width: 480px;
+  padding: 48px 40px;
+  border: 2px solid #ff3333;
+  border-radius: 8px;
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#gameOverOverlay h1 {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+  color: #ff3333;
+  font-family: "MyFont";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#gameOverOverlay .reason {
+  margin: 0 0 24px;
+  font-size: 1.1rem;
+  color: #cccccc;
+  font-family: "MyFont";
+  line-height: 1.5;
+}
+
+#gameOverOverlay button {
+  padding: 12px 36px;
+  font-size: 1.1rem;
+  font-family: "MyFont";
+  background: #ff3333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+#gameOverOverlay button:hover {
+  background: #cc0000;
+}
+
+/* ─── BLOCKER / INSTRUCTIONS ─────────────────── */
+#blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+}
+
+#instructions {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 24px 32px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-family: "MyFont";
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+#clickToPlay{
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+#instructions:hover {
+  border-color: #888;
+}
+
+/* ─── TOAST MESSAGES ─────────────────────────── */
+.message {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  z-index: 300;
+  pointer-events: none;
+  animation: fadeInOut 3s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  15%  { opacity: 1; transform: translateX(-50%) translateY(0); }
+  75%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ─── MOBILE ──────────────────────────────────── */
+@media (max-width: 768px) {
+  #gameOverOverlay {
+    width: 80%;
+    padding: 32px 24px;
+  }
+
+  #elevatorTimer {
+    font-size: 32px;
+  }
+
+  #instructions {
+    font-size: 12px;
+    padding: 16px 20px;
+  }
+}
+
+/* ─── HEALTH VIGNETTE ─────────────────────────── */
+#healthVignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  box-shadow: inset 0 0 80px rgba(0, 255, 80, 0.15);
+}
+
+@keyframes vignettePulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+#weaponDisplay {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-family: "MyFont";
+  font-size: 16px;
+  z-index: 100;
+}

@@ -1,0 +1,104 @@
+{
+    "id": "level3",
+    "name": "Floor 3 – Research Offices",
+    "description": "Grid of office rooms in a medical research facility.",
+    "metadata": {
+        "startRoom": [-10, 0, 0],
+        "elevatorAccess": true,
+        "mapDensity": "high"
+    },
+    "rooms": [
+        {
+            "id": "office_grid",
+            "type": "office",
+            "grid": {
+                "start": [-54, 0, -44],
+                "end": [54, 0, 54],
+                "spacing": [24, 24]
+            },
+            "model": "models/hospital_room.glb"
+        },
+        {
+            "id": "elevator1",
+            "type": "elevator",
+            "position": [-62, 0, -62],
+            "size": [4, 1, 2],
+            "model": "models/elevator.glb"
+        },
+        {
+            "id": "security_booth",
+            "type": "security_booth",
+            "position": [-54, 0, -62],
+            "rotation": [0, 90, 0],
+            "size": [6, 3, 6],
+            "model": "models/security_booth.glb"
+        },
+        {
+            "id": "gun_pickup",
+            "type": "prop",
+            "position": [-54.8, 1.7, -62.5],
+            "scale": [0.4, 0.4, 0.4],
+            "rotation": [0, 90, 0],
+            "model": "models/guns/pump_action.glb",
+            "userData": {
+                "pickup": true,
+                "itemType": "GUN",
+                "noPhysics": true
+            }
+        }
+    ],
+    "walls": [
+        {
+            "id": "floor3_north_wall",
+            "type": "solid",
+            "from": [-65, 0, -65],
+            "to": [ 65, 0, -65],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "floor3_south_wall",
+            "type": "solid",
+            "from": [-65, 0,  65],
+            "to": [ 65, 0,  65],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "floor3_west_wall",
+            "type": "solid",
+            "from": [-65, 0, -65],
+            "to": [-65, 0,  65],
+            "height": 3.5,
+            "thickness": 0.2
+        },
+        {
+            "id": "floor3_east_wall",
+            "type": "solid",
+            "from": [ 65, 0, -65],
+            "to": [ 65, 0,  65],
+            "height": 3.5,
+            "thickness": 0.2
+        }
+    ],
+    "pillars": [
+        {
+            "type": "pillar",
+            "grid": {
+                "start": [-54, 0, -54],
+                "end": [ 54, 0,  54],
+                "spacing": [18, 18]
+            },
+            "size": [0.5, 3, 0.5],
+            "model": "models/pillar.glb"
+        }
+    ],
+    "floorTiles": {
+        "grid": {
+            "start": [-65, 0, -65],
+            "end": [ 65, 0,  65],
+            "spacing": [2, 2]
+        }
+    },
+    "target": [0, 0, 0]
+}

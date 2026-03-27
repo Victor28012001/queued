@@ -1,0 +1,224 @@
+{
+  "id": "floor0",
+  "target": [0, 0, 20],
+  "rooms": [
+    {
+      "id": "elevator1",
+      "type": "elevator",
+      "position": [0, 0, -45],
+      "rotation": [0, 90, 0],
+      "model": "models/elevator.glb"
+    },
+    {
+      "id": "lockers_left_a",
+      "type": "lockers",
+      "grid": {
+        "start": [-15.8, 0, -30],
+        "end": [-15.8, 0, 10],
+        "spacing": [0, 6]
+      },
+      "rotation": [0, 90, 0],
+      "model": "models/school_locker_for_anime_schools-opt.glb"
+    },
+    {
+      "id": "lockers_right_a",
+      "type": "lockers",
+      "grid": {
+        "start": [15.8, 0, -30],
+        "end": [15.8, 0, 10],
+        "spacing": [0, 6]
+      },
+      "rotation": [0, -90, 0],
+      "model": "models/school_locker_for_anime_schools-opt.glb"
+    },
+    {
+      "id": "benches_left",
+      "type": "benches1",
+      "grid": {
+        "start": [-8, 0, -20],
+        "end": [-8, 0, 10],
+        "spacing": [0, 10]
+      },
+      "model": "models/locker_room_bench-opt.glb"
+    },
+    {
+      "id": "benches_right",
+      "type": "benches1",
+      "grid": {
+        "start": [8, 0, -20],
+        "end": [8, 0, 10],
+        "spacing": [0, 10]
+      },
+      "model": "models/locker_room_bench-opt.glb"
+    },
+    {
+      "id": "clothes_bench_left",
+      "type": "clothes",
+      "grid": {
+        "start": [-8, 0.85, -20],
+        "end": [-8, 0, 10],
+        "spacing": [0, 10]
+      },
+      "model": "models/folded_clothes-opt.glb"
+    },
+    {
+      "id": "clothes_bench_right",
+      "type": "clothes",
+      "grid": {
+        "start": [8, 0.85, -20],
+        "end": [8, 0, 10],
+        "spacing": [0, 10]
+      },
+      "model": "models/folded_clothes-opt.glb"
+    },
+    {
+      "id": "paper_note_1",
+      "type": "paper_note",
+      "position": [-8, 0.68, -19.5],
+      "rotation": [0, 0, 0],
+      "scale": [0.04, 0.04, 0.04],
+      "model": "models/wrinkled_piece_of_paper.glb",
+      "message": "If you wake up and see this,\nI woke up like you and stood\nin front of the camera for up to\n10 seconds before they could\nprove that I am well"
+    },
+    {
+      "id": "male_toilet",
+      "type": "toilet1",
+      "position": [-15, 0, 35],
+      "rotation": [0, 90, 0],
+      "model": "models/toilet.glb"
+    },
+    {
+      "id": "female_toilet",
+      "type": "toilet1",
+      "position": [15, 0, 35],
+      "rotation": [0, -90, 0],
+      "model": "models/toilet.glb"
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_north",
+      "type": "solid",
+      "from": [-16, 0, -48],
+      "to": [16, 0, -48],
+      "height": 4,
+      "thickness": 0.5
+    },
+    {
+      "id": "wall_south",
+      "type": "solid",
+      "from": [-16, 0, 48],
+      "to": [16, 0, 48],
+      "height": 4,
+      "thickness": 0.5
+    },
+    {
+      "id": "wall_west",
+      "type": "solid",
+      "from": [-16, 0, -48],
+      "to": [-16, 0, 48],
+      "height": 4,
+      "thickness": 0.5
+    },
+    {
+      "id": "wall_east",
+      "type": "solid",
+      "from": [16, 0, -48],
+      "to": [16, 0, 48],
+      "height": 4,
+      "thickness": 0.5
+    },
+    {
+      "id": "male_toilet_front_wall_left",
+      "type": "solid",
+      "from": [-16, 0, 28],
+      "to": [-14, 0, 28],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "male_toilet_front_wall_right",
+      "type": "solid",
+      "from": [-12, 0, 28],
+      "to": [-11, 0, 28],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "male_toilet_side_wall",
+      "type": "solid",
+      "from": [-11, 0, 28],
+      "to": [-11, 0, 43],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "male_toilet_back_wall",
+      "type": "solid",
+      "from": [-16, 0, 43],
+      "to": [-11, 0, 43],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+
+    {
+      "id": "female_toilet_front_wall_left",
+      "type": "solid",
+      "from": [11, 0, 28],
+      "to": [12, 0, 28],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "female_toilet_front_wall_right",
+      "type": "solid",
+      "from": [14, 0, 28],
+      "to": [16, 0, 28],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "female_toilet_side_wall",
+      "type": "solid",
+      "from": [11, 0, 28],
+      "to": [11, 0, 43],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "female_toilet_back_wall",
+      "type": "solid",
+      "from": [11, 0, 43],
+      "to": [16, 0, 43],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+
+    {
+      "id": "male_door",
+      "type": "door",
+      "position": [-13, 0, 28],
+      "size": [2, 2, 2],
+      "opensTo": "toilet",
+      "model": "models/door.glb",
+      "interactive": true
+    },
+    {
+      "id": "female_door",
+      "type": "door",
+      "position": [13, 0, 28],
+      "size": [2, 2, 2],
+      "opensTo": "toilet",
+      "model": "models/door.glb",
+      "interactive": true
+    }
+  ],
+  "pillars": [],
+  "floorTiles": {
+    "grid": {
+      "start": [-16, 0, -48],
+      "end": [16, 0, 48],
+      "spacing": [2, 2]
+    }
+  }
+}

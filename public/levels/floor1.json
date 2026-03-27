@@ -1,0 +1,231 @@
+{
+  "id": "level1",
+  "name": "Floor 1 – Reception & Visitor Center",
+  "description": "Intro level with reception, wall, door to lounge, and pillar grid.",
+  "metadata": {
+    "startRoom": [-10, 0, 0],
+    "elevatorAccess": true,
+    "mapDensity": "high"
+  },
+  "rooms": [
+    {
+      "id": "reception",
+      "type": "reception",
+      "position": [-3, 0, -8],
+      "size": [4, 1, 2],
+      "model": "models/reception_desk.glb"
+    },
+    {
+      "id": "paper_note_1",
+      "type": "paper_note",
+      "position": [-3, 1, -8],
+      "rotation": [0, 0, 0],
+      "scale": [0.04, 0.04, 0.04],
+      "model": "models/wrinkled_piece_of_paper.glb",
+      "message": "The crawlers are everywhere.\nFind a weapon.\nDon't let them hear you."
+    },
+    {
+      "id": "elevator",
+      "type": "elevator",
+      "position": [27.7, 0, 29.7],
+      "size": [4, 1, 2],
+      "model": "models/elevator.glb"
+    },
+    {
+      "id": "elevator1",
+      "type": "elevator",
+      "position": [-9.8, 0, -11.8],
+      "size": [4, 1, 2],
+      "model": "models/elevator.glb"
+    },
+    {
+      "id": "male_toilet",
+      "type": "toilet",
+      "position": [-7, 0, 30.5],
+      "size": [4, 1, 2],
+      "model": "models/toilet.glb"
+    },
+    {
+      "id": "female_toilet",
+      "type": "toilet",
+      "position": [4.5, 0, 30.5],
+      "size": [4, 1, 2],
+      "model": "models/toilet.glb"
+    },
+    {
+    "id": "lounge",
+    "type": "lounge",
+    "grid": {
+      "start": [-10, 0, -4],
+        "end": [20, 0, 24],
+      "spacing": [10, 10]
+    },
+    "model": "models/table_set1.glb"
+    },
+    {
+    "id": "benches",
+    "type": "benches",
+    "grid": {
+      "start": [2, 0, -10],
+      "end": [20, 0, -8],
+      "spacing": [1, 2]
+    },
+    "model": "models/bench.glb"
+    },
+    {
+    "id": "couch",
+    "type": "couch",
+    "grid": {
+      "start": [-10, 0, 2],
+        "end": [-10, 0, 24],
+      "spacing": [4, 8]
+    },
+    "model": "models/couch.glb"
+  }
+  ],
+  "walls": [
+    {
+      "id": "divider_wall",
+      "type": "solid",
+      "from": [-11, 0, -6],
+      "to": [-7, 0, -6],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "divider_wall",
+      "type": "solid",
+      "from": [-5, 0, -6],
+      "to": [29, 0, -6],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "male_toilet_wall",
+      "type": "solid",
+      "from": [-9, 0, 27.2],
+      "to": [1, 0, 27.2],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "female_toilet_wall",
+      "type": "solid",
+      "from": [3, 0, 27.2],
+      "to": [12, 0, 27.2],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "door_top",
+      "type": "solid",
+      "from": [-11, 0, 27.2],
+      "to": [12, 0, 27.2],
+      "height": 0.3,
+      "thickness": 0.2
+    },
+    {
+      "id": "door_top",
+      "type": "solid",
+      "from": [-11, 0, -6],
+      "to": [12, 0, -6],
+      "height": 0.3,
+      "thickness": 0.2
+    },
+    {
+      "id": "back_divider_wall",
+      "type": "solid",
+      "from": [-11, 0, 31],
+      "to": [29, 0, 31],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "front_divider_wall",
+      "type": "solid",
+      "from": [-11, 0, -13],
+      "to": [29, 0, -13],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+    "id": "left_divider_wall",
+    "type": "solid",
+    "from": [-11, 0, -13],
+    "to": [-11, 0, 31],
+    "height": 3.5,
+    "thickness": 0.2
+    },
+    {
+    "id": "left_toilet_wall",
+    "type": "solid",
+    "from": [0.9, 0, 27.2],
+    "to": [0.9, 0, 31],
+    "height": 3.5,
+    "thickness": 0.2
+    },
+    {
+    "id": "right_toilet_wall",
+    "type": "solid",
+    "from": [11.9, 0, 27.2],
+    "to": [11.9, 0, 31],
+    "height": 3.5,
+    "thickness": 0.2
+    },
+    {
+      "id": "right_divider_wall",
+      "type": "solid",
+      "from": [29, 0, -13],
+      "to": [29, 0, 31],
+      "height": 3.5,
+      "thickness": 0.2
+    },
+    {
+      "id": "main_door",
+      "type": "door",
+      "position": [-6.49, 1, -6],
+      "size": [0.12, 0.21, 0.12],
+      "opensTo": "lounge",
+      "model": "models/white_double_door1.glb",
+      "interactive": true
+    },
+    {
+      "id": "male_door",
+      "type": "door",
+      "position": [-10, 0, 27.2],
+      "size": [2, 2, 2],
+      "opensTo": "lounge",
+      "model": "models/door.glb",
+      "interactive": true
+    },
+    {
+      "id": "female_door",
+      "type": "door",
+      "position": [2, 0, 27.2],
+      "size": [2, 2, 2],
+      "opensTo": "lounge",
+      "model": "models/door.glb",
+      "interactive": true
+    }
+  ],
+  "pillars": [
+    {
+      "type": "pillar",
+      "grid": {
+        "start": [-4, 0, -4],
+        "end": [28, 0, 24],
+        "spacing": [8, 8]
+      },
+      "size": [8, 3, 8],
+      "model": "models/pillar.glb"
+    }
+  ],
+  "floorTiles": {
+  "grid": {
+    "start": [-10, 0, -12],
+    "end": [28, 0, 30],
+    "spacing": [2, 2]
+  }
+  },
+  "target": [-2, 0, 0]
+}

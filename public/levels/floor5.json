@@ -1,0 +1,32 @@
+{
+  "id": "level5",
+  "name": "Floor 5 – Emergency Stairwell",
+  "description": "Overrun escape route. Reach the elevator before you're consumed.",
+  "metadata": {
+    "startRoom": [-5, 0, -5],
+    "elevatorAccess": true
+  },
+  "rooms": [
+    {
+      "id": "elevator1",
+      "type": "elevator",
+      "position": [18, 0, 18],
+      "size": [4, 1, 2],
+      "model": "models/elevator.glb"
+    }
+  ],
+  "walls": [
+    { "id": "w_front", "type": "solid", "from": [-20, 0, -20], "to": [20, 0, -20], "height": 3.5, "thickness": 0.2 },
+    { "id": "w_back",  "type": "solid", "from": [-20, 0,  20], "to": [20, 0,  20], "height": 3.5, "thickness": 0.2 },
+    { "id": "w_left",  "type": "solid", "from": [-20, 0, -20], "to": [-20, 0, 20], "height": 3.5, "thickness": 0.2 },
+    { "id": "w_right", "type": "solid", "from": [ 20, 0, -20], "to": [ 20, 0, 20], "height": 3.5, "thickness": 0.2 }
+  ],
+  "floorTiles": {
+    "grid": {
+      "start": [-20, 0, -20],
+      "end":   [ 20, 0,  20],
+      "spacing": [2, 2]
+    }
+  },
+  "target": [0, 0, 0]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Check</title>
+</head>
+<body>
+    <h1>File Check</h1>
+    <div id="results"></div>
+    <script>
+        const files = [
+            '/game.js',
+            '/LevelLoader.js',
+            '/BodyTypes.js',
+            '/ObjectiveManager.js',
+            '/levels/floor0.json',
+            '/models/fps_arm.glb'
+        ];
+        
+        const results = document.getElementById('results');
+        
+        files.forEach(async file => {
+            try {
+                const response = await fetch(file);
+                if (response.ok) {
+                    results.innerHTML += `<p style="color:green">✓ ${file} exists</p>`;
+                } else {
+                    results.innerHTML += `<p style="color:red">✗ ${file} not found (${response.status})</p>`;
+                }
+            } catch (e) {
+                results.innerHTML += `<p style="color:red">✗ ${file} error: ${e.message}</p>`;
+            }
+        });
+    </script>
+</body>
+</html>
